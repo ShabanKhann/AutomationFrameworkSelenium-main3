@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Tests">
+
+    <listeners>
+        <listener class-name="anhtester.com.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Sign In Test">
+        <parameter name="BROWSER" value="chrome"/>
+        <classes>
+            <class name="anhtester.com.projects.website.crm.testcases.SignInTest">
+                <methods>
+                    <include name="registerFormFields"/>
+                    <include name="loginDynamically"/>
+                    <include name="emailAlreadyExixts"/>
+                    <include name="registerTest"/>
+                    <include name="emptyField"/>
+                    <include name="defaultLanguage"/>
+                    <include name="languages"/>
+                    <include name="selectJapanese"/>
+                    <include name="emailerrorJapanese"/>
+                    <include name="passwordMissMatchJapanese"/>
+                    <include name="fieldEmptyJapanese"/>
+                    <include name="selectChinese"/>
+                    <include name="emailerrorChinese"/>
+                    <include name="passwordMissMatchChinese"/>
+                    <include name="fieldIsEmptyChinese"/>
+                    <include name="usersign"/>
+                    <include name="errorEmailPassword"/>
+                    <include name="randomPassword"/>
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
